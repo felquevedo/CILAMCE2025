@@ -14,26 +14,84 @@
 \usepackage{parskip} 
 \usepackage{setspace}
 
+
+%Package to hold figure in position
+\usepackage{placeins}
+
+
+% Mathematical Symbols
+\newcommand{\dgds}{\boldsymbol{g_\sigma}}
+\newcommand{\Dll}{\boldsymbol{D}}
+\newcommand{\Dllmod}{\boldsymbol{D^{*}}}
+\newcommand{\Dllepvp}{\boldsymbol{D}^{epvp}}
+\newcommand{\dstrain}{\boldsymbol{\dot{\varepsilon}}}
+\newcommand{\dstraine}{\boldsymbol{\dot{\varepsilon}}^{e}}
+\newcommand{\dstrainp}{\boldsymbol{\dot{\varepsilon}}^{p}}
+\newcommand{\dstrainv}{\boldsymbol{\dot{\varepsilon}}^{vp}}
+\newcommand{\straineqp}{\bar \varepsilon^p}
+\newcommand{\dstrainsh}{\boldsymbol{\dot{\varepsilon}}^{sh}}
+\newcommand{\dstraincr}{\boldsymbol{\dot{\varepsilon}}^{cr}}
+\newcommand{\dstress}{\boldsymbol{\dot{\sigma}}}
+
+\newcommand{\ex}{\boldsymbol{e}_x}
+\newcommand{\ey}{\boldsymbol{e}_y}
+\newcommand{\ez}{\boldsymbol{e}_z}
+
+\newcommand{\onell}{\boldsymbol{1}}
+\newcommand{\strain}{\boldsymbol{\varepsilon}}
+\newcommand{\straincr}{\boldsymbol{\varepsilon}^{cr}}
+\newcommand{\straine}{\boldsymbol{\varepsilon}^{e}}
+\newcommand{\strainp}{\boldsymbol{\varepsilon}^{p}}
+\newcommand{\strainsh}{\boldsymbol{\varepsilon}^{sh}}
+\newcommand{\strainshCEB}{\varepsilon_{sh}}
+\newcommand{\strainvp}{\boldsymbol{\varepsilon}^{vp}}
+\newcommand{\stress}{\boldsymbol{\sigma}}
+\newcommand{\zerol}{\boldsymbol 0}
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% My Additional Packages
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage[utf8]{inputenc}
-%\usepackage{amssymb} %Mathematics
-%\usepackage{amsfonts}%Mathematics
+\usepackage{amssymb} %Mathematics
+\usepackage{amsfonts}%Mathematics
 \usepackage{amsmath,amscd}%Mathematics
-%\usepackage{amsthm}%Mathematics
-%\usepackage{mathrsfs}%Mathematics font
-%\usepackage{xspace}
-%\usepackage{booktabs}
-%\usepackage{stmaryrd}%Particular Brackets
-%\usepackage{graphicx} %Tables and Figures
-%\usepackage{subfigure}
-%\usepackage{url}
+\usepackage{amsthm}%Mathematics
+\usepackage{mathrsfs}%Mathematics font
+\usepackage{xspace}
+\usepackage{booktabs}
+\usepackage{stmaryrd}%Particular Brackets
+\usepackage{graphicx} %Tables and Figures
+\usepackage{subfigure}
+\usepackage{url}
 \usepackage{hyperref}
 \usepackage{cleveref}
 \usepackage{./pkg-crefNames}
 \usepackage[labelsep=period]{caption}
+%\usepackage{mathptmx}
+\usepackage{newtxtext,newtxmath}
+\usepackage{bm}
+
+\hypersetup{hidelinks}
+
+%\usepackage[utf8]{inputenc}
+%%\usepackage{amssymb} %Mathematics
+%%\usepackage{amsfonts}%Mathematics
+%\usepackage{amsmath,amscd}%Mathematics
+%%\usepackage{amsthm}%Mathematics
+%%\usepackage{mathrsfs}%Mathematics font
+%%\usepackage{xspace}
+%%\usepackage{booktabs}
+%%\usepackage{stmaryrd}%Particular Brackets
+%%\usepackage{graphicx} %Tables and Figures
+%%\usepackage{subfigure}
+%%\usepackage{url}
+%\usepackage{hyperref}
+%\usepackage{cleveref}
+%\usepackage{./pkg-crefNames}
+%\usepackage[labelsep=period]{caption}
 \usepackage{makecell}
 
 %BibTeX compatible with the CILAMCE format
@@ -205,114 +263,62 @@ The structural response of the tunnel system is governed by time-dependent behav
 % --------------------------------------------------------------------------
 
 The viscoelastic behavior of concrete is modeled using the Solidification Theory developed by \citet{BazantPrasannanA,BazantPrasannanB}, calibrated with the CEB-FIP Model Code 1990 standard specifications formulation described
-in \citet{CEB1993}. This formulation enables the simulation of delayed deformations and stress redistribution caused by creep and shrinkage in the lining. The creep strain is represented through a Generalized Kelvin chain with aging, while shrinkage is introduced as an isotropic strain field.
-
-The stress–strain relationship under small deformations is expressed as:
-
-\vspace{6pt}
+in \citet{CEB1993}. This formulation enables the simulation of delayed deformations and stress redistribution caused by creep and shrinkage in the lining. The creep strain is represented through a Generalized Kelvin chain with aging, while shrinkage is introduced as an isotropic strain field. The stress–strain relationship under small deformations is expressed as:
 \begin{center}
 	\begin{equation}
-		\Delta \boldsymbol{\sigma} = \boldsymbol{D} : \Delta \boldsymbol{\varepsilon} - \boldsymbol{D} : \Delta \boldsymbol{\varepsilon}^{sh} - \boldsymbol{D^{\ast}} : \Delta \boldsymbol{\varepsilon}^{cr}
+		\Delta \stress = \Dll : \Delta \strain - \Dll : \Delta \strainsh - \Dllmod : \Delta \straincr
 		\label{Eq1}
 	\end{equation}
 \end{center}
-\vspace{6pt}
-
-\noindent where $\boldsymbol{D}$ is the elastic stiffness tensor, $boldsymbol{D}^{\ast}$ is the same tensor reformulated to account for the viscoelastic effects due to concrete aging, and $\Delta \boldsymbol{\varepsilon}^{sh}$ and $\Delta \boldsymbol{\varepsilon}^{cr}$ are the shrinkage and creep strain increments, respectively.
+where $\Dll$ is the elastic constitutive tensor, $\Dllmod$ is the same tensor reformulated to account for the viscoelastic effects due to concrete aging, and $\Delta \strainsh$ and $\straincr$ are the shrinkage and creep strain increments, respectively.
 
 To match the CEB-FIP MC90 formulation, the parameters of the Bažant-Prasannan model are calibrated through the following equivalences:
-
-\vspace{6pt}
 \begin{center}
 	\begin{equation}
 		E_0 = E_c(t_0), \quad \gamma(t - t_0) = \beta_c(t - t_0), \quad \dfrac{1}{v(t)} = \dfrac{\varphi_0(t_0)}{E_{ci}}, \quad \dfrac{1}{\eta(t)} \rightarrow 0
 		\label{Eq2}
 	\end{equation}
 \end{center}
-\vspace{6pt}
 
-In Equation (\ref{Eq2}), $t_0$ represents the concrete age at the time of loading; $E_c(t_0)$ is the tangent modulus at loading; $\beta_c(t-t_0)$ is a function of the duration under load; $\phi_0(t_0)$ is the basic creep coefficient; $E_{ci}$ is the elastic modulus at 28 days; and $\eta(t)$ is the apparent macroscopic viscosity, which tends to infinity, reflecting the solidification concept. This calibration allows for a realistic representation of the aging viscoelastic behavior using a constant set of coefficients.
+In Equation (\ref{Eq2}), $t_0$ represents the concrete age at the time of loading; $E_c(t_0)$ is the tangent modulus at loading; $\beta_c(t-t_0)$ is a function of the age of loading; $\varphi_0(t_0)$ is the basic creep coefficient; $E_{ci}$ is the elastic modulus at 28 days; and $\eta(t)$ is the apparent macroscopic viscosity.
 
 % --------------------------------------------------------------------------
 \subsection{Rock mass} \label{constitmodelrockmass}
 % --------------------------------------------------------------------------
 
-The rock mass is modeled using a coupled elastoplastic-viscoplastic formulation under infinitesimal strain theory. The total strain rate ($\dot{\boldsymbol{\varepsilon}}$) is decomposed into elastic ($\dot{\boldsymbol{\varepsilon}}^{e}$), plastic ($\dot{\boldsymbol{\varepsilon}}^{p}$), and viscoplastic ($\dot{\boldsymbol{\varepsilon}}^{vp}$) components:
-
-\vspace{6pt}
+The rock mass is modeled using a coupled elastoplastic-viscoplastic formulation under infinitesimal strain theory. The total strain rate $\dstrain$ is decomposed into elastic $\dstraine$, plastic $\dstrainp$, and viscoplastic $\dstrainv$ components:
 \begin{center}
 	\begin{equation}
 		\dot{\boldsymbol{\varepsilon}} = \dot{\boldsymbol{\varepsilon}}^{e} + \dot{\boldsymbol{\varepsilon}}^{p} + \dot{\boldsymbol{\varepsilon}}^{vp}
 		\label{Eq3}
 	\end{equation}
 \end{center}
-\vspace{6pt}
-
-The short-term behavior is captured using the Drucker–Prager yield criterion:
-
-\vspace{6pt}
+where:
+\begin{equation}
+	\dstrainp = \begin{cases} 
+		\dot{\lambda}^p \dfrac{\partial f^p}{\partial \stress}, & \text{for } f^p > 0, \\ 
+		\boldsymbol{0}, & \text{for } f^p \le 0,
+	\end{cases}
+ 	, \quad \text{and } \quad \dstrainv = \dfrac{\langle f^{vp}\rangle^n}{\eta} \dfrac{\partial f^{vp}}{\partial \stress}
+	\label{Eq6}
+\end{equation}
+where $\dot{\lambda}^p$ and $\dot{\lambda}^p$ denotes, respectively, the plastic and viscoplastic multiplier, $f^p$ and $f^{vp}$ is the plastic and viscoplastic yield function, $\eta$ is the dynamic viscosity constant (in MPa.day), $n$ is the dimensionless parameter and $\langle \ast \rangle$ is the McCauley function. The short-term behavior is captured using the Drucker–Prager yield criterion:
 \begin{center}
 	\begin{equation}
 		f^p(\boldsymbol{{\sigma}},q) = f^p(I_1, J_2, q^p)= \beta_1 I_1 + \beta_2 \sqrt{J_2} - q^p(\alpha^p)
 		\label{Eq4}
 	\end{equation}
 \end{center}
-\vspace{6pt}
-
 The yield surface is defined in terms of the first invariant of stress tensor $I_1$, the second invariant of the deviator tensor $J_2$, the parameter related to cohesion $q^p(\alpha^p)$ and the strength parameters related to the friction angle $\beta_1$ and $\beta_2$. These terms are given by:
-
-\vspace{6pt}
 \begin{center}
 	\begin{equation}
 		\beta_1 = \dfrac{(k^p-1)}{3}, \beta_2 = \dfrac{(2k^p+1)}{\sqrt{3}}, q^p(\alpha^p)= 2\sqrt{k^p}c^p(\alpha^p)
 		\label{Eq5}
 	\end{equation}
 \end{center}
-\vspace{6pt}
-
 \noindent where $k^p = (1+\sin{\phi^p})/(1-\sin{\phi^p})$ and $\alpha^p$ is the internal variable associated with the hardening and softening of the material.
 
-The viscosity parameter and power-law exponent govern the rate of viscoplastic deformation. This formulation allows for the simulation of both instantaneous and time-dependent effects relevant to the deep tunnel environment.
-
 Consistent with the elastoplastic approach, the viscoplastic yield function also adopts the Drucker–Prager yield criterion. As a consequence, the coefficients $\beta_1$ and $\beta_2$ of eq. (\ref{Eq5}) are evaluated by replacing $k^p$ for $k^{vp} = (1+\sin{\phi^{vp}})/(1-\sin{\phi^{vp}})$. Also, the viscoplastic cohesion parameter then becomes $q^{vp} = 2\sqrt{k^{vp}}c^{vp}(\alpha^{vp})$. In this study, both plastic and viscous flow rules are implemented with associative potentials, assuming perfect plasticity and viscoplasticity (i. e., cohesions $c^p$ and $c^{vp}$ assumed to remain constant).
-
-The plastic flow rule, governing the evolution of plastic deformations, is defined as:
-
-\vspace{6pt}
-\begin{equation}
-	\dot{\boldsymbol{\varepsilon}}^p = \begin{cases} 
-		\dot{\lambda}^p \dfrac{\partial g^p}{\partial \boldsymbol{\sigma}}, & \text{for } f^p > 0, \\ 
-		\boldsymbol{0}, & \text{for } f^p \le 0,
-	\end{cases}
-	\label{Eq6}
-\end{equation}
-\vspace{6pt}
-
-\noindent where $\dot{\lambda}^p$ denotes the plastic multiplier and $g^p$ is the plastic potential function, analogous to the yield function $f^p$. The viscoplastic flow rule in eq. (\ref{Eq6}) is expressed by:
-
-\vspace{6pt}
-\begin{center}
-	\begin{equation}
-		\dot{\boldsymbol{\varepsilon}}^{vp} = \dot{\lambda}^{vp} \dfrac{\partial f^{vp}}{\partial \boldsymbol{\sigma}}
-		\label{Eq7}
-	\end{equation}
-\end{center}
-\vspace{6pt}
-
-The viscoplastic multiplier $\dot{\lambda}^{vp}$ in equation above is given explicitly by the following expression:
-
-\vspace{6pt}
-\begin{center}
-	\begin{equation}
-		\dot{\lambda}^{vp} = \dfrac{\Phi(\boldsymbol{\sigma},q^{vp})}{\eta}
-		\label{Eq8}
-	\end{equation}
-\end{center}
-\vspace{6pt}
-
-\noindent where $\eta$ is the dynamic viscosity constant (in MPa.day), $\Phi = \langle f^{vp}(\boldsymbol{\sigma},q^{vp})\rangle^n$ is the overstress function, $n$ is the dimensionless parameter controlling the power-law shape and $\langle \ast \rangle$ is the McCauley function, which results in zero when $\ast < 0$ ensuring that viscoplastic flow occurs only for positive overstress values.
-
-
 
 % --------------------------------------------------------------------------
 \section{Spatial and time discretization of the domain}\label{sec:domain}

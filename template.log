@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.1.7)  23 JUL 2025 11:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.1.7)  23 JUL 2025 11:31
 entering extended mode
 **./template.tex
 (template.tex
@@ -908,88 +908,90 @@ Package pdftex.def Info: Figures/Fig1.pdf  used on input line 331.
 <Figures/Fig2.pdf, id=77, 5341.9575pt x 3724.91624pt>
 File: Figures/Fig2.pdf Graphic file (type pdf)
 <use Figures/Fig2.pdf>
-Package pdftex.def Info: Figures/Fig2.pdf  used on input line 345.
-(pdftex.def)             Requested size: 427.36534pt x 297.99939pt.
-<Figures/Fig3.pdf, id=78, 504.6195pt x 213.31685pt>
+Package pdftex.def Info: Figures/Fig2.pdf  used on input line 346.
+(pdftex.def)             Requested size: 373.97523pt x 260.77078pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[3 <./Figures/Fig1.pdf>]
+<Figures/Fig3.pdf, id=98, 504.6195pt x 213.31685pt>
 File: Figures/Fig3.pdf Graphic file (type pdf)
 <use Figures/Fig3.pdf>
-Package pdftex.def Info: Figures/Fig3.pdf  used on input line 357.
-(pdftex.def)             Requested size: 403.69615pt x 170.6537pt.
- [3 <./Figures/Fig1.pdf>]
-<Figures/Fig4.pdf, id=104, 376.94714pt x 194.05405pt>
-File: Figures/Fig4.pdf Graphic file (type pdf)
-<use Figures/Fig4.pdf>
-Package pdftex.def Info: Figures/Fig4.pdf  used on input line 412.
-(pdftex.def)             Requested size: 301.5581pt x 155.24344pt.
+Package pdftex.def Info: Figures/Fig3.pdf  used on input line 356.
+(pdftex.def)             Requested size: 378.4637pt x 159.98723pt.
 
-Underfull \vbox (badness 2781) has occurred while \output is active []
+Underfull \vbox (badness 3758) has occurred while \output is active []
 
  [4 <./Figures/Fig2.pdf> <./Figures/Fig3.pdf
 
 pdfTeX warning: pdflatex.exe (file ./Figures/Fig3.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
->] [5 <./Figures/Fig4.pdf>]
-<Figures/Fig6.pdf, id=335, 572.33582pt x 187.58855pt>
+>]
+<Figures/Fig4.pdf, id=142, 376.94714pt x 194.05405pt>
+File: Figures/Fig4.pdf Graphic file (type pdf)
+<use Figures/Fig4.pdf>
+Package pdftex.def Info: Figures/Fig4.pdf  used on input line 431.
+(pdftex.def)             Requested size: 301.5581pt x 155.24344pt.
+ [5 <./Figures/Fig4.pdf>]
+<Figures/Fig6.pdf, id=336, 572.33582pt x 187.58855pt>
 File: Figures/Fig6.pdf Graphic file (type pdf)
 <use Figures/Fig6.pdf>
-Package pdftex.def Info: Figures/Fig6.pdf  used on input line 444.
+Package pdftex.def Info: Figures/Fig6.pdf  used on input line 464.
 (pdftex.def)             Requested size: 343.40413pt x 112.55399pt.
-<Figures/rhocurto.pdf, id=337, 540.06253pt x 194.11203pt>
+<Figures/rhocurto.pdf, id=338, 540.06253pt x 194.11203pt>
 File: Figures/rhocurto.pdf Graphic file (type pdf)
 <use Figures/rhocurto.pdf>
-Package pdftex.def Info: Figures/rhocurto.pdf  used on input line 456.
+Package pdftex.def Info: Figures/rhocurto.pdf  used on input line 477.
 (pdftex.def)             Requested size: 459.05531pt x 164.99599pt.
 
-Overfull \hbox (3.8112pt too wide) in paragraph at lines 456--458
+Overfull \hbox (3.8112pt too wide) in paragraph at lines 477--479
  [] 
  []
 
 LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input lin
-e 464.
+e 486.
 (C:\Users\fel_q\AppData\Roaming\MiKTeX\tex/latex/newtx\ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 464.
- [6 <./Figures/Fig6.pdf> <./Figures/rhocurto.pdf
+(Font)              scaled to size 10.0pt on input line 486.
+<Figures/rholongo.pdf, id=340, 539.67528pt x 194.05559pt>
+File: Figures/rholongo.pdf Graphic file (type pdf)
+<use Figures/rholongo.pdf>
+Package pdftex.def Info: Figures/rholongo.pdf  used on input line 490.
+(pdftex.def)             Requested size: 458.72615pt x 164.94801pt.
+
+Overfull \hbox (3.48204pt too wide) in paragraph at lines 490--492
+ [] 
+ []
+
+[6 <./Figures/Fig6.pdf> <./Figures/rhocurto.pdf
 
 pdfTeX warning: pdflatex.exe (file ./Figures/rhocurto.pdf): PDF inclusion: mult
 iple pdfs with page group included in a single page
 >]
-<Figures/rholongo.pdf, id=830, 539.67528pt x 194.05559pt>
-File: Figures/rholongo.pdf Graphic file (type pdf)
-<use Figures/rholongo.pdf>
-Package pdftex.def Info: Figures/rholongo.pdf  used on input line 468.
-(pdftex.def)             Requested size: 458.72615pt x 164.94801pt.
-
-Overfull \hbox (3.48204pt too wide) in paragraph at lines 468--470
- [] 
- []
-
-<Figures/chicurto.pdf, id=832, 544.31572pt x 197.8862pt>
+<Figures/chicurto.pdf, id=833, 544.31572pt x 197.8862pt>
 File: Figures/chicurto.pdf Graphic file (type pdf)
 <use Figures/chicurto.pdf>
-Package pdftex.def Info: Figures/chicurto.pdf  used on input line 480.
+Package pdftex.def Info: Figures/chicurto.pdf  used on input line 503.
 (pdftex.def)             Requested size: 462.67053pt x 168.20404pt.
 
-Overfull \hbox (7.42642pt too wide) in paragraph at lines 480--482
+Overfull \hbox (7.42642pt too wide) in paragraph at lines 503--505
  [] 
  []
 
-<Figures/chilongo.pdf, id=834, 544.75302pt x 197.14864pt>
+<Figures/chilongo.pdf, id=835, 544.75302pt x 197.14864pt>
 File: Figures/chilongo.pdf Graphic file (type pdf)
 <use Figures/chilongo.pdf>
-Package pdftex.def Info: Figures/chilongo.pdf  used on input line 492.
+Package pdftex.def Info: Figures/chilongo.pdf  used on input line 516.
 (pdftex.def)             Requested size: 463.04225pt x 167.57712pt.
 
-Overfull \hbox (7.79814pt too wide) in paragraph at lines 492--494
+Overfull \hbox (7.79814pt too wide) in paragraph at lines 516--518
  [] 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7 <./Figures/rholongo.pdf> <./Figures/chicurto.pdf
+[7 <./Figures/rholongo.pdf> <./Figures/chicurto.pdf
 
 pdfTeX warning: pdflatex.exe (file ./Figures/chicurto.pdf): PDF inclusion: mult
 iple pdfs with page group included in a single page
@@ -1006,13 +1008,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 15560 strings out of 479697
- 238014 string characters out of 2877010
- 557195 words of memory out of 3000000
- 32242 multiletter control sequences out of 15000+200000
+ 15562 strings out of 479697
+ 238051 string characters out of 2877010
+ 557305 words of memory out of 3000000
+ 32244 multiletter control sequences out of 15000+200000
  466846 words of font info for 121 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,14n,72p,1402b,492s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 66i,10n,72p,1402b,492s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/fel_q/AppData/Roaming/MiKTeX/fonts/enc/dvips/tex-gyre/q-ts1.enc}{C:
 /Users/fel_q/AppData/Roaming/MiKTeX/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{C:/U
 sers/fel_q/AppData/Roaming/MiKTeX/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}<C:/User
@@ -1027,7 +1029,7 @@ ming/MiKTeX/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/fel_q/AppData/Roaming
 eX/fonts/type1/public/newtx/ztmb.pfb><C:/Users/fel_q/AppData/Roaming/MiKTeX/fon
 ts/type1/public/newtx/ztmr.pfb><C:/Users/fel_q/AppData/Roaming/MiKTeX/fonts/typ
 e1/public/newtx/ztmri.pfb>
-Output written on template.pdf (9 pages, 1468287 bytes).
+Output written on template.pdf (9 pages, 1467922 bytes).
 PDF statistics:
  2517 PDF objects out of 2984 (max. 8388607)
  42 named destinations out of 1000 (max. 500000)

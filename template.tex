@@ -334,68 +334,87 @@ The finite element simulations were performed using a three-dimensional model re
 \label{Fig1}
 \end{center}
 \end{figure}
-\vspace{8pt}
 
 The computational domain consists of a parallelepiped volume with dimensions $(L_1 + L_2) \times L_3 \times d_3$, as presented in \cref{Fig2}. Symmetry conditions are imposed on the planes $ x = 0 $, $ y = 0 $, and $ z = L_1+L_2 $, reducing the computational cost of the analysis. This approach assumes that the longitudinal tunnels are excavated synchronously and the transverse gallery is excavated from the tunnels towards the center. Initial isotropic in-situ stresses are applied as boundary pressures: vertical stress $\sigma_v$ at the upper plane and horizontal stress $\sigma_h$ at the left-lateral and back planes.
 
 Discretization is performed using 8-node trilinear hexahedral elements with full integration. In regions with complex geometry, such as the tunnel-gallery intersection, 8-node linear tetrahedral elements are used. A refined mesh is employed in the zones near the tunnel and gallery walls to ensure accuracy in stress and deformation fields. The total mesh consists of approximately 617,000 elements.
 
-\begin{figure}[!ht]
+The excavation process is modeled using an activation–deactivation technique. The longitudinal tunnel excavation is simulated by deactivating solid elements (reducing their stiffness), followed by activation of lining elements after a specified distance from the face ($d_{0t}$). Each excavation step ($L_{pt}$) is associated with a time interval $t_p = L_{pt}/V_{pt}$, where $V_{pt} = 12.5$ m/day is the excavation speed. The gallery is excavated after complete a predefined number of steps ($n_{pig}$) in the longitudinal tunnel and follows the same procedure with $L_{pg}$, $V_{pg}$ and $d_{0g}$. Table 1 presents the values adopted of the parameters related to the domain geometry, excavation and installation of the lining.
+
+\begin{figure}[!h]
 	\begin{center}
-		\includegraphics[scale=0.08]{Figures/Fig2.pdf}
+		\includegraphics[scale=0.07]{Figures/Fig2.pdf}
 		\vspace{12pt}
 		\caption{Mesh, dimensions and boundary conditions of the twin tunnels with gallery domain.}
 		\label{Fig2}
 	\end{center}
 \end{figure}
-\vspace{8pt}
-
-The excavation process is modeled using an activation–deactivation technique. The longitudinal tunnel excavation is simulated by deactivating solid elements (reducing their stiffness), followed by activation of lining elements after a specified distance from the face ($d_{0t}$). Each excavation step ($L_{pt}$) is associated with a time interval $t_p = L_{pt}/V_{pt}$, where $V_{pt} = 12.5$ m/day is the excavation speed. The gallery is excavated after complete a predefined number of steps ($n_{pig}$) in the longitudinal tunnel and follows the same procedure with $L_{pg}$, $V_{pg}$ and $d_{0g}$. Table 1 presents the values adopted of the parameters related to the domain geometry, excavation and installation of the lining.
+\FloatBarrier
 
 \begin{figure}[!ht]
 	\begin{center}
-		\includegraphics[scale=0.8]{Figures/Fig3.pdf}
+		\includegraphics[scale=0.75]{Figures/Fig3.pdf}
 		\vspace{12pt}
 		\caption{Geometry and F. E mesh: (a) longitudinal tunnel and gallery in the symmetry plane y = 0 and (b) gallery cross-section}
 		\label{Fig3}
 	\end{center}
 \end{figure}
-\vspace{8pt}
+\FloatBarrier
 
 %Material ages and durations are tracked in time steps consistent with the construction sequence to ensure correct application of time-dependent behavior. This approach allows the numerical model to capture the interaction between excavation-induced stress redistribution and the long-term mechanical response of both the rock mass and the lining. 
 
-\vspace{8pt}
-\begin{table}[!ht]
+%\vspace{8pt}
+%\begin{table}[!ht]
+%	\centering
+%	\caption{Geometric and construction parameters of the domain}
+%	\label{Table1}
+%	\vspace{0pt}
+%	\begin{tabular}{cccc}
+%		\hline
+%		Parameters & Symbol & Unit & Value \\[-2pt] \hline
+%		\multicolumn{4}{c}{Longitudinal tunnels} \\ [-2pt] \hline
+%		Radius & $R_t$ & m & $R_t$ \\[-3pt]
+%		Thickness of the concrete lining & $e_t$ & m & $0.05R_t$ \\[-3pt]
+%		Step length of the excavation process & $L_{pt}$ & m & $R_t/3$ \\[-3pt]
+%		Unlined length & $d_{0t}$ & m & $2R_t/3$ \\[-3pt] \hline
+%		\multicolumn{4}{c}{Gallery} \\ [-2pt] \hline
+%		Radius & $R_g$ & m & $0.5R_t$ \\[-3pt]
+%		Thickness of the concrete lining & $e_g$ & m & $0.05R_t$ \\[-3pt]
+%		Step length of the excavation process & $L_{pg}$ & m & $0.2R_g$ \\[-3pt]
+%		Unlined length & $d_{0g}$ & m & $0$ \\[-3pt]
+%		Steps before gallery excavation & $n_{pig}$ & un & $15$ \\[-3pt] \hline
+%		%\multicolumn{4}{c}{Rest of domain} \\ [-2pt] \hline
+%		%Distance between longitudinal tunnel axes & $d_1$ & m & $4R_t$ \\[-3pt]
+%		%Thickness along vertical direction $\mathbf{e}_y$ & $d_3$ & m & $20R_t$ \\[-3pt]
+%		%\makecell[c]{Distance of transition zone between tetrahedral \\ and hexahedral elements} & $d_5$ & m & $2L_p$ \\[-3pt]
+%		%Length of the unexcavated region & $L_1$ & m & $10R_t$ \\[-3pt]
+%		%Total excavated length & $L_2$ & m & $500L_{pt}$ \\[-3pt]
+%		%Thickness along transversal direction $\mathbf{e}_z$ & $L_3$ & m & $20R_t + d_1/2$ \\[-3pt] \hline
+%	\end{tabular}
+%\end{table}
+%\FloatBarrier
+%\vspace{8pt}
+
+\begin{table}[h!]
 	\centering
 	\caption{Geometric and construction parameters of the domain}
 	\label{Table1}
 	\vspace{0pt}
-	\begin{tabular}{cccc}
+	\begin{tabular}{l ccc|ccc}
 		\hline
-		Parameters & Symbol & Unit & Value \\[-2pt] \hline
-		\multicolumn{4}{c}{Longitudinal tunnels} \\ [-2pt] \hline
-		Radius & $R_t$ & m & $R_t$ \\[-3pt]
-		Thickness of the concrete lining & $e_t$ & m & $0.05R_t$ \\[-3pt]
-		Step length of the excavation process & $L_{pt}$ & m & $R_t/3$ \\[-3pt]
-		Unlined length & $d_{0t}$ & m & $2R_t/3$ \\[-3pt] \hline
-		\multicolumn{4}{c}{Gallery} \\ [-2pt] \hline
-		Radius & $R_g$ & m & $0.5R_t$ \\[-3pt]
-		Thickness of the concrete lining & $e_g$ & m & $0.05R_t$ \\[-3pt]
-		Step length of the excavation process & $L_{pg}$ & m & $0.2R_g$ \\[-3pt]
-		Unlined length & $d_{0g}$ & m & $0$ \\[-3pt]
-		Steps before gallery excavation & $n_{pig}$ & un & $15$ \\[-3pt] \hline
-		\multicolumn{4}{c}{Rest of domain} \\ [-2pt] \hline
-		Distance between longitudinal tunnel axes & $d_1$ & m & $4R_t$ \\[-3pt]
-		Thickness along vertical direction $\mathbf{e}_y$ & $d_3$ & m & $20R_t$ \\[-3pt]
-		\makecell[c]{Distance of transition zone between tetrahedral \\ and hexahedral elements} & $d_5$ & m & $2L_p$ \\[-3pt]
-		Length of the unexcavated region & $L_1$ & m & $10R_t$ \\[-3pt]
-		Total excavated length & $L_2$ & m & $500L_{pt}$ \\[-3pt]
-		Thickness along transversal direction $\mathbf{e}_z$ & $L_3$ & m & $20R_t + d_1/2$ \\[-3pt] \hline
+		\textbf{Parameters} & \multicolumn{3}{c|}{\textbf{Longitudinal tunnels}} & \multicolumn{3}{c}{\textbf{Gallery}} \\
+		\cline{2-7}
+		& \textbf{Symbol} & \textbf{Unit} & \textbf{Value} & \textbf{Symbol} & \textbf{Unit} & \textbf{Value} \\
+		\hline
+		Radius & $R_t$ & m & $R_t$ & $R_g$ & m & $0.5R_t$ \\
+		Thickness of the concrete lining & $e_t$ & m & $0.05R_t$ & $e_g$ & m & $0.05R_t$ \\
+		Step length of the excavation process & $L_{pt}$ & m & $R_t/3$ & $L_{pg}$ & m & $0.2R_g$ \\
+		Unlined length & $d_{0t}$ & m & $2R_t/3$ & $d_{0g}$ & m & $0$ \\
+		\hline
 	\end{tabular}
+	\label{tab:parameters}
 \end{table}
-\vspace{8pt}
-
-
+\FloatBarrier
 
 % --------------------------------------------------------------------------
 \section{Verification}\label{sec:verification}
@@ -415,6 +434,7 @@ While \citet{ChortisKavvadas2023} explored a range of geometric and constitutive
 		\label{Fig4}
 	\end{center}
 \end{figure}
+\FloatBarrier
 \vspace{8pt}
 
 The internal forces in the tunnel lining were evaluated at the end of construction using a normalized circumferential $N_C^{\ast}=N_C/(p_0D)$ component. In Figure \ref{Fig4} (a), results near the transverse gallery were consistent with those reported by \citet{ChortisKavvadas2023}, confirming the concentration of effects in that region. Further from the gallery, lower values were observed, likely due to differences in modeling strategies, including element types, excavation procedures, and constitutive criteria.
@@ -447,6 +467,7 @@ Two sections, S1 and S2, were adopted along the longitudinal tunnel and their lo
 		\label{Fig5}
 	\end{center}
 \end{figure}
+\FloatBarrier
 \vspace{8pt}
 
 In \cref{Fig6}, the results show that tunnel deformations are greater at the crown ($\theta=90^{\circ}$), with the lower values at $\theta=0^{\circ} < \theta < 30^{\circ}$, indicating a predominantly horizontal ovalization. Compared to the elastic model, viscoelastic linings show higher overall convergences, about 10\% at the end of construction. In section S2, the lowest deformations occur near the gallery entrance, while for $\theta > 90^{\circ}$, the behavior becomes similar to the other section. 
@@ -459,6 +480,7 @@ In \cref{Fig6}, the results show that tunnel deformations are greater at the cro
 		\label{Fig6}
 	\end{center}
 \end{figure}
+\FloatBarrier
 \vspace{8pt}
 
 The long-term behavior presented in \cref{Fig7} remains similar to that at the end of construction, with maximum deformations at the crown. Anisotropy decreases in the range $0^{\circ} \leq \theta \leq 45^{\circ}$, with the friction angle influencing not only the magnitude of deformations but also contributing to the anisotropic response. In section S2, despite higher convergences over time, the pattern between 30° and 75° remains consistent, suggesting minimal influence of the friction angle on anisotropy above the gallery entrance.
@@ -471,6 +493,7 @@ The long-term behavior presented in \cref{Fig7} remains similar to that at the e
 		\label{Fig7}
 	\end{center}
 \end{figure}
+\FloatBarrier
 \vspace{8pt}
 
 Figure \ref{Fig8} shows that, at the end of construction, the lining pressures remain close to the reference value $p(\theta)$, except in the range $0^{\circ} < \theta < 60^{\circ}$, where a significantly increase is observed, reaching more than twice the crown pressure at $\theta = 0^{\circ}$. The friction angle influences pressure distribution, especially in section S2, where higher angles reduce pressures above the gallery entrance and amplify the contrast with the crown, reflecting greater rock mass support and lower stress transfer to the lining.
@@ -483,6 +506,7 @@ Figure \ref{Fig8} shows that, at the end of construction, the lining pressures r
 		\label{Fig8}
 	\end{center}
 \end{figure}
+\FloatBarrier
 \vspace{8pt}
 
 The long-term pressures presented in \cref{Fig9} have a similar behavior to the end of construction but with increased magnitudes, and the influence of the friction angle is less pronounced. Overall, stress concentrations tend to be higher at the lateral sides of the tunnels ($\theta = 0^{\circ} \ \text{and} \ 180^{\circ}$), indicating that regions with lower displacements are subjected to greater lining loads.
@@ -495,6 +519,7 @@ The long-term pressures presented in \cref{Fig9} have a similar behavior to the 
 		\label{Fig9}
 	\end{center}
 \end{figure}
+\FloatBarrier
 \vspace{8pt}
 
 % --------------------------------------------------------------------------

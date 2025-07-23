@@ -1,0 +1,43 @@
+\begin{thebibliography}{}
+
+\bibitem[Quevedo et~al., 202]{Quevedoetal2025}
+F.~P.~M. Quevedo, C.~A. M.~M. Colombo, D. Bernaud, and S. Maghous.
+\newblock 3d finite element analysis of rock deformation in twin circular
+  tunnels with a transverse gallery using plasticity and time‑dependent
+  models.
+\newblock {\em Geotechnical and Geological Engineering}, vol. 1, n. 149, pp.
+  1--33, 202.
+
+\bibitem[Ba{\v{z}}ant and Prasannan, 1989a]{BazantPrasannanA}
+Z.~P. Ba{\v{z}}ant and S. Prasannan.
+\newblock Solidification theory for concrete creep. {I}: Formulation.
+\newblock {\em Journal of Engineering Mechanics}, vol. 115, n. 8, pp.
+  1691--1703, 1989a.
+
+\bibitem[Ba{\v{z}}ant and Prasannan, 1989b]{BazantPrasannanB}
+Z.~P. Ba{\v{z}}ant and S. Prasannan.
+\newblock Solidification theory for concrete creep. {II}: Verification and
+  application.
+\newblock {\em Journal of Engineering Mechanics}, vol. 115, n. 8, pp.
+  1704--1725, 1989b.
+
+\bibitem[CEB-FIP, 1993]{CEB1993}
+ CEB-FIP.
+\newblock {\em CEB-FIP model code 1990: Design code}.
+\newblock Comité Euro International du Béton and Fédération Internationale
+  de la Précontrainte (CEB-FIP), 1993.
+
+\bibitem[Chortis and Kavvadas, 2023]{ChortisKavvadas2023}
+F. Chortis and M. Kavvadas.
+\newblock 3d numerical investigation of the axial forces acting on tunnel
+  junctions constructed in fractured/weathered to very blocky rockmass.
+\newblock {\em Expanding Underground - Knowledge and Passion to Make a Positive
+  Impact on the World}, pp.  1574--1582, 2023.
+
+\bibitem[Hoek et~al., 2002]{HoekBrown2002}
+E. Hoek, C. Carranza-Torres, and B. Corkum.
+\newblock Hoek-brown failure criterion 2002 edition.
+\newblock {\em Proceedings of the North American Rock Mechanics Society
+  Meeting}, pp.  267--273, 2002.
+
+\end{thebibliography}

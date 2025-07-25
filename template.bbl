@@ -27,6 +27,20 @@ Z.~P. Ba{\v{z}}ant and S. Prasannan.
 \newblock Comité Euro International du Béton and Fédération Internationale
   de la Précontrainte (CEB-FIP), 1993.
 
+\bibitem[Quevedo et~al., 2018]{quevedo2018}
+F.~P.~M. Quevedo, R.~J. Schmitz, I.~B. Morsch, C.~F. A., and D. Bernaud.
+\newblock Customization of a software of finite elements to analysis of
+  concrete structures: long-term effects.
+\newblock {\em IBRACON Structures and Materials Journal}, vol. 11, n. 4, pp.
+  696--718, 2018.
+
+\bibitem[Bernaud, 1991]{bernaud1991}
+D. Bernaud.
+\newblock {\em Tunnels profonds dans les milieux viscoplastiques: approches
+  exp{\'e}rimentale et num{\'e}rique}.
+\newblock Ph.{D}. {T}hesis (in french), Ecole Nationale des Ponts et
+  Chauss{\'e}es, Paris, France, 1991.
+
 \bibitem[Chortis and Kavvadas, 2023]{ChortisKavvadas2023}
 F. Chortis and M. Kavvadas.
 \newblock 3d numerical investigation of the axial forces acting on tunnel

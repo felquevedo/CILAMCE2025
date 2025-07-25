@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Solver" version="1.3.0.9126"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="96">
+    <identity>
+      <id>9e7680b8-6c9f-4132-a95c-f45e64334c60</id>
+      <revision>2</revision>
+    </identity>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <mixedNumbers>false</mixedNumbers>
+      <roundingMode>0</roundingMode>
+      <approximateEqualAccuracy>0</approximateEqualAccuracy>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true" hideElementsHighlightings="true">
+      <paper id="9" orientation="Portrait" width="827" height="1169" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Core" version="1.73.9126.0" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="MathRegion" version="1.73.9126.0" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="TextRegion" version="1.73.9126.0" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region left="27" top="18" width="91" height="18" color="#000000" fontSize="7">
+      <text lang="por" fontFamily="Arial" fontSize="7">
+        <content>
+          <p>Fim da construção</p>
+        </content>
+      </text>
+    </region>
+    <region left="72" top="45" width="113" height="19" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">stels1fi0p90</e>
+          <e type="operand">2.23</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="72" top="63" width="113" height="19" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">stels1fi5p90</e>
+          <e type="operand">2.17</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="72" top="81" width="113" height="19" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">stels2fi0p90</e>
+          <e type="operand">2.54</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="72" top="99" width="113" height="19" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">stels2fi5p90</e>
+          <e type="operand">2.43</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="72" top="135" width="119" height="19" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">stvels1fi0p90</e>
+          <e type="operand">1.86</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="72" top="153" width="119" height="19" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">stvels1fi5p90</e>
+          <e type="operand">1.71</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="72" top="171" width="119" height="19" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">stvels2fi0p90</e>
+          <e type="operand">2.11</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="72" top="189" width="119" height="19" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">stvels2fi5p90</e>
+          <e type="operand">1.91</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="72" top="225" width="119" height="18" color="#000000" fontSize="7">
+      <text lang="por" fontFamily="Arial" fontSize="7">
+        <content>
+          <p>comparação com fi: 0 e 5</p>
+        </content>
+      </text>
+    </region>
+    <region left="117" top="261" width="56" height="19" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">elastico</e>
+        </input>
+      </math>
+    </region>
+    <region left="324" top="261" width="84" height="19" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">viscoelastico</e>
+        </input>
+      </math>
+    </region>
+    <region left="117" top="288" width="127" height="31" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">stels1fi0p90</e>
+          <e type="operand">stels1fi5p90</e>
+          <e type="operator" args="2">/</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1.0276</e>
+        </result>
+      </math>
+    </region>
+    <region left="315" top="288" width="133" height="31" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">stvels1fi0p90</e>
+          <e type="operand">stvels1fi5p90</e>
+          <e type="operator" args="2">/</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1.0877</e>
+        </result>
+      </math>
+    </region>
+    <region left="90" top="297" width="22" height="19" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">s1</e>
+        </input>
+      </math>
+    </region>
+    <region left="117" top="315" width="127" height="31" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">stels2fi0p90</e>
+          <e type="operand">stels2fi5p90</e>
+          <e type="operator" args="2">/</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1.0453</e>
+        </result>
+      </math>
+    </region>
+    <region left="315" top="315" width="133" height="31" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">stvels2fi0p90</e>
+          <e type="operand">stvels2fi5p90</e>
+          <e type="operator" args="2">/</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1.1047</e>
+        </result>
+      </math>
+    </region>
+    <region left="90" top="324" width="22" height="19" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">s2</e>
+        </input>
+      </math>
+    </region>
+    <region left="72" top="360" width="90" height="18" color="#000000" fontSize="7">
+      <text lang="por" fontFamily="Arial" fontSize="7">
+        <content>
+          <p>comparação el vel</p>
+        </content>
+      </text>
+    </region>
+    <region left="126" top="396" width="22" height="19" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">s1</e>
+        </input>
+      </math>
+    </region>
+    <region left="297" top="396" width="22" height="19" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">s2</e>
+        </input>
+      </math>
+    </region>
+    <region left="117" top="414" width="133" height="31" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">stels1fi0p90</e>
+          <e type="operand">stvels1fi0p90</e>
+          <e type="operator" args="2">/</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1.1989</e>
+        </result>
+      </math>
+    </region>
+    <region left="297" top="414" width="133" height="31" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">stels2fi0p90</e>
+          <e type="operand">stvels2fi0p90</e>
+          <e type="operator" args="2">/</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1.2038</e>
+        </result>
+      </math>
+    </region>
+    <region left="81" top="423" width="28" height="19" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">fi0</e>
+        </input>
+      </math>
+    </region>
+    <region left="117" top="450" width="127" height="31" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">stels1fi5p90</e>
+          <e type="operand">stvels1fi5p90</e>
+          <e type="operator" args="2">/</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1.269</e>
+        </result>
+      </math>
+    </region>
+    <region left="297" top="450" width="133" height="31" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">stels2fi5p90</e>
+          <e type="operand">stvels2fi5p90</e>
+          <e type="operator" args="2">/</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1.2723</e>
+        </result>
+      </math>
+    </region>
+    <region left="81" top="459" width="28" height="19" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">fi5</e>
+        </input>
+      </math>
+    </region>
+    <region left="36" top="531" width="66" height="18" color="#000000" fontSize="7" isBreakable="false">
+      <text lang="por" fontFamily="Arial" fontSize="7">
+        <content>
+          <p>Longo prazo</p>
+        </content>
+      </text>
+    </region>
+    <region left="81" top="558" width="113" height="19" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">ltels1fi0p90</e>
+          <e type="operand">3.94</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="81" top="576" width="113" height="19" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">ltels1fi5p90</e>
+          <e type="operand">3.92</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="81" top="594" width="113" height="19" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">ltels2fi0p90</e>
+          <e type="operand">4.16</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="81" top="612" width="113" height="19" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">ltels2fi5p90</e>
+          <e type="operand">4.07</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="81" top="648" width="119" height="19" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">ltvels1fi0p90</e>
+          <e type="operand">3.73</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="81" top="666" width="119" height="19" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">ltvels1fi5p90</e>
+          <e type="operand">3.62</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="81" top="684" width="119" height="19" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">ltvels2fi0p90</e>
+          <e type="operand">3.74</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="81" top="702" width="119" height="19" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">ltvels2fi5p90</e>
+          <e type="operand">3.50</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="45" top="747" width="119" height="18" color="#000000" fontSize="7" isBreakable="false">
+      <text lang="por" fontFamily="Arial" fontSize="7">
+        <content>
+          <p>comparação com fi: 0 e 5</p>
+        </content>
+      </text>
+    </region>
+    <region left="90" top="783" width="56" height="19" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">elastico</e>
+        </input>
+      </math>
+    </region>
+    <region left="297" top="783" width="84" height="19" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">viscoelastico</e>
+        </input>
+      </math>
+    </region>
+    <region left="90" top="810" width="127" height="31" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">ltels1fi0p90</e>
+          <e type="operand">ltels1fi5p90</e>
+          <e type="operator" args="2">/</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1.0051</e>
+        </result>
+      </math>
+    </region>
+    <region left="288" top="810" width="133" height="31" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">ltvels1fi0p90</e>
+          <e type="operand">ltvels1fi5p90</e>
+          <e type="operator" args="2">/</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1.0304</e>
+        </result>
+      </math>
+    </region>
+    <region left="63" top="819" width="22" height="19" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">s1</e>
+        </input>
+      </math>
+    </region>
+    <region left="90" top="837" width="127" height="31" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">ltels2fi0p90</e>
+          <e type="operand">ltels2fi5p90</e>
+          <e type="operator" args="2">/</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1.0221</e>
+        </result>
+      </math>
+    </region>
+    <region left="288" top="837" width="133" height="31" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">ltvels2fi0p90</e>
+          <e type="operand">ltvels2fi5p90</e>
+          <e type="operator" args="2">/</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1.0686</e>
+        </result>
+      </math>
+    </region>
+    <region left="63" top="846" width="22" height="19" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">s2</e>
+        </input>
+      </math>
+    </region>
+    <region left="45" top="882" width="90" height="18" color="#000000" fontSize="7" isBreakable="false">
+      <text lang="por" fontFamily="Arial" fontSize="7">
+        <content>
+          <p>comparação el vel</p>
+        </content>
+      </text>
+    </region>
+    <region left="99" top="918" width="22" height="19" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">s1</e>
+        </input>
+      </math>
+    </region>
+    <region left="270" top="918" width="22" height="19" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">s2</e>
+        </input>
+      </math>
+    </region>
+    <region left="90" top="936" width="133" height="31" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">ltels1fi0p90</e>
+          <e type="operand">ltvels1fi0p90</e>
+          <e type="operator" args="2">/</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1.0563</e>
+        </result>
+      </math>
+    </region>
+    <region left="270" top="936" width="133" height="31" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">ltels2fi0p90</e>
+          <e type="operand">ltvels2fi0p90</e>
+          <e type="operator" args="2">/</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1.1123</e>
+        </result>
+      </math>
+    </region>
+    <region left="54" top="945" width="28" height="19" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">fi0</e>
+        </input>
+      </math>
+    </region>
+    <region left="90" top="972" width="133" height="31" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">ltels1fi5p90</e>
+          <e type="operand">ltvels1fi5p90</e>
+          <e type="operator" args="2">/</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1.0829</e>
+        </result>
+      </math>
+    </region>
+    <region left="270" top="972" width="133" height="31" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">ltels2fi5p90</e>
+          <e type="operand">ltvels2fi5p90</e>
+          <e type="operator" args="2">/</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1.1629</e>
+        </result>
+      </math>
+    </region>
+    <region left="54" top="981" width="28" height="19" color="#000000" fontSize="7">
+      <math>
+        <input>
+          <e type="operand">fi5</e>
+        </input>
+      </math>
+    </region>
+  </regions>
+</worksheet>

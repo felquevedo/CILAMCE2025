@@ -235,9 +235,6 @@ Pressure anisotropy on twin tunnel linings induced by a transverse gallery const
 \noindent \textbf{Abstract.} The increasing construction of twin tunnels demands a comprehensive understanding of their interaction with transverse galleries and the surrounding rock mass. This study conducts a 3D finite element analysis of the junction between deep twin tunnels and a transverse gallery, incorporating time-dependent effects such as rock mass creep, concrete creep, and shrinkage. The model is verified against existing numerical results, confirming its reliability in estimating internal forces in the lining. The influence of different rock mass friction angles on pressure distributions is investigated, revealing that higher friction angles significantly reduce lining pressures, particularly at the end of tunnel construction. The results indicate pronounced anisotropy in pressures, influenced by the properties of the lining and the rock mass, and peak pressures are observed at the lateral sides of the walls. Additionally, viscoelastic linings exhibit increased long-term stress redistribution, emphasizing the role of rheological behavior in tunnel performance. These findings offer valuable insights for the design and reinforcement of tunnel–gallery intersections. The study reinforces the importance of 3D modeling and time-dependent behavior in the safe and accurate design of tunnel–gallery intersections.
 
 
-%The increasing construction of twin tunnels demands a comprehensive understanding of their interaction with transverse galleries and the surrounding rock mass. This study conducts a 3D finite element analysis of the junction between deep twin tunnels and a transverse gallery, incorporating time-dependent effects such as rock mass creep, concrete creep, and shrinkage. The model is verified against existing numerical results, confirming its reliability in estimating internal forces in the lining. A comparison of different rock mass friction angles demonstrates their impact on pressure distributions along the lining, providing relevant insights for design and reinforcement strategies. The results indicate pronounced anisotropy in pressures, influenced by the properties of the lining and the rock mass, and peak pressures are observed at the lateral sides of the walls. A higher friction angle contributes to pressure reduction, especially at the end of tunnel construction. Viscoelastic linings show increased long-term redistribution of stresses. The study reinforces the importance of 3D modeling and time-dependent behavior in the safe and accurate design of tunnel–gallery intersections.
-
-
 \vspace{18pt} % <- keep this vertical space!
 
 \noindent \textbf{Keywords:} Deep twin tunnels, Transverse gallery, Viscoelastic concrete lining, Elastoplastic-viscoplastic coupled, Finite element model
@@ -367,61 +364,6 @@ The excavation process is modeled using an activation–deactivation technique. 
 \end{figure}
 %\FloatBarrier
 
-%Material ages and durations are tracked in time steps consistent with the construction sequence to ensure correct application of time-dependent behavior. This approach allows the numerical model to capture the interaction between excavation-induced stress redistribution and the long-term mechanical response of both the rock mass and the lining. 
-
-%\vspace{8pt}
-%\begin{table}[!ht]
-%	\centering
-%	\caption{Geometric and construction parameters of the domain}
-%	\label{Table1}
-%	\vspace{0pt}
-%	\begin{tabular}{cccc}
-%		\hline
-%		Parameters & Symbol & Unit & Value \\[-2pt] \hline
-%		\multicolumn{4}{c}{Longitudinal tunnels} \\ [-2pt] \hline
-%		Radius & $R_t$ & m & $R_t$ \\[-3pt]
-%		Thickness of the concrete lining & $e_t$ & m & $0.05R_t$ \\[-3pt]
-%		Step length of the excavation process & $L_{pt}$ & m & $R_t/3$ \\[-3pt]
-%		Unlined length & $d_{0t}$ & m & $2R_t/3$ \\[-3pt] \hline
-%		\multicolumn{4}{c}{Gallery} \\ [-2pt] \hline
-%		Radius & $R_g$ & m & $0.5R_t$ \\[-3pt]
-%		Thickness of the concrete lining & $e_g$ & m & $0.05R_t$ \\[-3pt]
-%		Step length of the excavation process & $L_{pg}$ & m & $0.2R_g$ \\[-3pt]
-%		Unlined length & $d_{0g}$ & m & $0$ \\[-3pt]
-%		Steps before gallery excavation & $n_{pig}$ & un & $15$ \\[-3pt] \hline
-%		%\multicolumn{4}{c}{Rest of domain} \\ [-2pt] \hline
-%		%Distance between longitudinal tunnel axes & $d_1$ & m & $4R_t$ \\[-3pt]
-%		%Thickness along vertical direction $\mathbf{e}_y$ & $d_3$ & m & $20R_t$ \\[-3pt]
-%		%\makecell[c]{Distance of transition zone between tetrahedral \\ and hexahedral elements} & $d_5$ & m & $2L_p$ \\[-3pt]
-%		%Length of the unexcavated region & $L_1$ & m & $10R_t$ \\[-3pt]
-%		%Total excavated length & $L_2$ & m & $500L_{pt}$ \\[-3pt]
-%		%Thickness along transversal direction $\mathbf{e}_z$ & $L_3$ & m & $20R_t + d_1/2$ \\[-3pt] \hline
-%	\end{tabular}
-%\end{table}
-%\FloatBarrier
-%\vspace{8pt}
-
-%\begin{table}[h!]
-%	\centering
-%	\caption{Geometric and construction parameters of the domain}
-%	\label{Table1}
-%	\vspace{0pt}
-%	\begin{tabular}{l ccc|ccc}
-%		\hline
-%		\textbf{Parameters} & \multicolumn{3}{c|}{\textbf{Longitudinal tunnels}} & \multicolumn{3}{c}{\textbf{Gallery}} \\
-%		\cline{2-7}
-%		& \textbf{Symbol} & \textbf{Unit} & \textbf{Value} & \textbf{Symbol} & \textbf{Unit} & \textbf{Value} \\
-%		\hline
-%		Radius & $R_t$ & m & $R_t$ & $R_g$ & m & $0.5R_t$ \\
-%		Thickness of the concrete lining & $e_t$ & m & $0.05R_t$ & $e_g$ & m & $0.05R_t$ \\
-%		Step length of the excavation process & $L_{pt}$ & m & $R_t/3$ & $L_{pg}$ & m & $0.2R_g$ \\
-%		Unlined length & $d_{0t}$ & m & $2R_t/3$ & $d_{0g}$ & m & $0$ \\
-%		\hline
-%	\end{tabular}
-%	\label{tab:parameters}
-%\end{table}
-%\FloatBarrier
-
 % --------------------------------------------------------------------------
 \section{Computational model verification}\label{sec:verification}
 % --------------------------------------------------------------------------
@@ -475,34 +417,6 @@ Numerical results of lining pressures are presented at the end of construction a
 %\FloatBarrier
 \vspace{8pt}
 
-%In \cref{Fig6}, the results show that tunnel deformations are greater at the crown ($\theta=90^{\circ}$), with the lower values at $\theta=0^{\circ} < \theta < 30^{\circ}$, indicating a predominantly horizontal ovalization. Compared to the elastic model, viscoelastic linings show higher overall convergences, about 10\% at the end of construction. In section S2, the lowest deformations occur near the gallery entrance, while for $\theta > 90^{\circ}$, the behavior becomes similar to the other section. 
-
-%\begin{figure}[!ht]
-%	\begin{center}
-%		\includegraphics[scale=0.85]{Figures/rhocurto.pdf}
-%		\vspace{12pt}
-%		\caption{Anisotropy of deformations in longitudinal tunnel lining at the end of construction: (a) elastic lining (EL) and (b) viscoelastic lining (VEL).}
-%		\label{Fig6}
-%	\end{center}
-%\end{figure}
-%\FloatBarrier
-%\vspace{8pt}
-
-%The long-term behavior presented in \cref{Fig7} remains similar to that at the end of construction, with maximum deformations at the crown. Anisotropy decreases in the range $0^{\circ} \leq \theta \leq 45^{\circ}$, with the friction angle influencing not only the magnitude of deformations but also contributing to the anisotropic response. In section S2, despite higher convergences over time, the pattern between 30° and 75° remains consistent, suggesting minimal influence of the friction angle on anisotropy above the gallery entrance.
-
-%\begin{figure}[!ht]
-%	\begin{center}
-%		\includegraphics[scale=0.85]{Figures/rholongo.pdf}
-%		\vspace{12pt}
-%		\caption{Anisotropy of deformations in longitudinal tunnel lining at long-term: (a) elastic lining (EL) and (b) viscoelastic lining (VEL).}
-%		\label{Fig7}
-%	\end{center}
-%\end{figure}
-%\FloatBarrier
-%\vspace{8pt}
-
-
-
 \begin{figure}[!ht]
 	\begin{center}
 		\includegraphics[scale=0.85]{Figures/fig6.pdf}
@@ -521,17 +435,6 @@ The friction angle influences pressure distribution, especially in section S2 at
 The long-term pressures presented in \cref{Fig6}(c),(d) have a similar behavior to the end of construction but with increased magnitudes, but the influence in the anisotropy response with the friction angle is less pronounced.
 
 In the case of elastic lining, the highest crown pressure occurs in section S2, although the increase compared to section S1 at the end of construction is relatively lower, around 6\% for a friction angle of $\phi=0^{\circ}$. In contrast, with a viscoelastic lining, the crown pressure remains nearly identical between the two sections for $\phi=0^{\circ}$, and even decreases by approximately 4\% in section S2 when $\phi = 5^{\circ}$. ????
-
-%\begin{figure}[!ht]
-%	\begin{center}
-%		\includegraphics[scale=0.85]{Figures/chilongo.pdf}
-%		\vspace{12pt}
-%		\caption{Anisotropy of pressures in longitudinal tunnel lining at long-term: (a) elastic lining (EL) and (b) viscoelastic lining (VEL).}
-%		\label{Fig9}
-%	\end{center}
-%\end{figure}
-%%\FloatBarrier
-%\vspace{8pt}
 
 % --------------------------------------------------------------------------
 \section{Conclusions}\label{sec:conclusion}

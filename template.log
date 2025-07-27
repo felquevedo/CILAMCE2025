@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.1.7)  27 JUL 2025 17:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.1.7)  27 JUL 2025 17:16
 entering extended mode
 **./template.tex
 (template.tex
@@ -935,25 +935,25 @@ File: Figures/Fig4.pdf Graphic file (type pdf)
 <use Figures/Fig4.pdf>
 Package pdftex.def Info: Figures/Fig4.pdf  used on input line 437.
 (pdftex.def)             Requested size: 301.5581pt x 155.24344pt.
-<Figures/Fig6.pdf, id=157, 596.16072pt x 187.34708pt>
-File: Figures/Fig6.pdf Graphic file (type pdf)
-<use Figures/Fig6.pdf>
-Package pdftex.def Info: Figures/Fig6.pdf  used on input line 469.
+<Figures/Fig5.pdf, id=157, 596.16072pt x 187.34708pt>
+File: Figures/Fig5.pdf Graphic file (type pdf)
+<use Figures/Fig5.pdf>
+Package pdftex.def Info: Figures/Fig5.pdf  used on input line 469.
 (pdftex.def)             Requested size: 357.69919pt x 112.4091pt.
-<Figures/chicurtolongo.pdf, id=158, 546.00128pt x 440.41158pt>
-File: Figures/chicurtolongo.pdf Graphic file (type pdf)
-<use Figures/chicurtolongo.pdf>
-Package pdftex.def Info: Figures/chicurtolongo.pdf  used on input line 508.
+<Figures/fig6.pdf, id=158, 546.00128pt x 440.41158pt>
+File: Figures/fig6.pdf Graphic file (type pdf)
+<use Figures/fig6.pdf>
+Package pdftex.def Info: Figures/fig6.pdf  used on input line 508.
 (pdftex.def)             Requested size: 464.10327pt x 374.3516pt.
 
 Overfull \hbox (8.85916pt too wide) in paragraph at lines 508--510
  [] 
  []
 
-[5 <./Figures/Fig4.pdf>] [6 <./Figures/Fig6.pdf> <./Figures/chicurtolongo.pdf
+[5 <./Figures/Fig4.pdf>] [6 <./Figures/Fig5.pdf> <./Figures/fig6.pdf
 
-pdfTeX warning: pdflatex.exe (file ./Figures/chicurtolongo.pdf): PDF inclusion:
- multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./Figures/fig6.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
 >] (template.bbl) [7] (template.aux)
 Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: B448F767E4ABC09B7B44D9283B704CB5;515.
@@ -968,7 +968,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
  ) 
 Here is how much of TeX's memory you used:
  15502 strings out of 479697
- 236944 string characters out of 2877010
+ 236890 string characters out of 2877010
  557625 words of memory out of 3000000
  32195 multiletter control sequences out of 15000+200000
  466470 words of font info for 120 fonts, out of 3000000 for 9000
@@ -986,7 +986,7 @@ Data/Roaming/MiKTeX/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/fel_q/AppData
 ing/MiKTeX/fonts/type1/public/newtx/ztmb.pfb><C:/Users/fel_q/AppData/Roaming/Mi
 KTeX/fonts/type1/public/newtx/ztmr.pfb><C:/Users/fel_q/AppData/Roaming/MiKTeX/f
 onts/type1/public/newtx/ztmri.pfb>
-Output written on template.pdf (7 pages, 1181900 bytes).
+Output written on template.pdf (7 pages, 1181891 bytes).
 PDF statistics:
  1557 PDF objects out of 1728 (max. 8388607)
  38 named destinations out of 1000 (max. 500000)
